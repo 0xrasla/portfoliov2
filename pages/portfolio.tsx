@@ -16,6 +16,9 @@ const Portfolio: NextPage = () => {
     exit: { opacity: 0 },
   };
 
+  const bg = useColorModeValue("text", "secondary");
+  const color = useColorModeValue("contrast", "text");
+
   return (
     <div>
       <Head>
@@ -81,8 +84,8 @@ const Portfolio: NextPage = () => {
                 <Box
                   key={index}
                   as={"div"}
-                  bg={useColorModeValue("text", "secondary")}
-                  color={useColorModeValue("contrast", "text")}
+                  bg={bg}
+                  color={color}
                   padding={"4"}
                   borderRadius={"10px"}
                   textAlign={index % 2 === 0 ? "left" : "right"}

@@ -15,6 +15,9 @@ const Posts: NextPage = () => {
     exit: { opacity: 0 },
   };
 
+  const bg = useColorModeValue("text", "secondary");
+  const color = useColorModeValue("contrast", "text");
+
   return (
     <div>
       <Head>
@@ -82,8 +85,8 @@ const Posts: NextPage = () => {
                 <Box
                   key={index}
                   as={"div"}
-                  bg={useColorModeValue("text", "secondary")}
-                  color={useColorModeValue("contrast", "text")}
+                  bg={bg}
+                  color={color}
                   padding={"4"}
                   borderRadius={"10px"}
                   textAlign={index % 2 === 0 ? "left" : "right"}
@@ -100,7 +103,12 @@ const Posts: NextPage = () => {
                   }}
                   boxShadow={"3px 3px 10px black"}
                 >
-                  <Image src={project.image} width={300} height={250} />
+                  <Image
+                    src={project.image}
+                    width={300}
+                    height={250}
+                    alt={""}
+                  />
                   <Text
                     as={"h3"}
                     fontFamily={"fancy"}

@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import { Container, Text, Box, useColorMode, Button } from "@chakra-ui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Image from 'next/image'
 
 const AboutSection: NextPage = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -56,7 +57,7 @@ const AboutSection: NextPage = () => {
           <Box as={"span"} fontFamily={"fancy"} display={"flex"}>
             <Text as={"h3"}>2021 -</Text>
             <Text as={"h3"} fontFamily={"body"}>
-              &nbsp;&nbsp;Completing Bachelor's Degree in Computer Science
+              &nbsp;&nbsp;Completing Bachelor&apos;s Degree in Computer Science
             </Text>
           </Box>
           <Box as={"span"} fontFamily={"fancy"} display={"flex"}>
@@ -130,10 +131,11 @@ const AboutSection: NextPage = () => {
           gap={"10px"}
           marginBottom={"20px"}
         >
-          <img
+          <Image
             src={`https://img.icons8.com/material-outlined/24/${
               colorMode == "dark" ? "000000" : "ffffff"
             }/github.png`}
+            alt={""}
           />
           <Text>
             <Link href={"https://github.com/Rasla-Dev"} target={"_blank"}>
@@ -149,10 +151,11 @@ const AboutSection: NextPage = () => {
           gap={"10px"}
           marginBottom={"20px"}
         >
-          <img
+          <Image
             src={`https://img.icons8.com/ios/24/${
               colorMode == "dark" ? "000000" : "ffffff"
             }/linkedin-circled--v1.png`}
+            alt={""}
           />
           <Text>
             <Link
@@ -171,10 +174,11 @@ const AboutSection: NextPage = () => {
           gap={"10px"}
           marginBottom={"20px"}
         >
-          <img
+          <Image
             src={`https://img.icons8.com/material-outlined/24/${
               colorMode == "dark" ? "000000" : "ffffff"
             }/instagram-new--v1.png`}
+            alt={""}
           />
           <Text>
             <Link

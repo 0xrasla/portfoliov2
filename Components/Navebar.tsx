@@ -7,9 +7,9 @@ import {
   color,
 } from "@chakra-ui/react";
 import { NextPage } from "next";
-import NextLink from "next/link";
-import { useColorMode } from "@chakra-ui/react";
+import Image from "next/image";
 import { useRouter } from "next/router";
+import { useColorMode } from "@chakra-ui/react";
 
 const NaveBar: NextPage = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -64,7 +64,7 @@ const NaveBar: NextPage = () => {
             outline: "none",
           }}
         >
-          <img src={colorMode == "dark" ? darkIcon : lightIcon} />
+          <Image src={colorMode == "dark" ? darkIcon : lightIcon} alt={""} />
         </Button>
       </HStack>
     </Box>
