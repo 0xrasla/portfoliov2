@@ -80,7 +80,7 @@ const Posts: NextPage = () => {
                 key={index}
                 hasArrow={true}
                 placement={index % 2 === 0 ? "right" : "left"}
-                label={"Click to visit code repository"}
+                label={"Click to See the Post"}
               >
                 <Box
                   key={index}

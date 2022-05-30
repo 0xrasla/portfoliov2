@@ -57,7 +57,7 @@ const Home: NextPage = () => {
             fontSize={"xl"}
             fontWeight={"medium"}
           >
-            <Text as={"h2"}>Hi, I am a Software Developer from India</Text>
+            <Text as={"h2"}>Hi, I am a Software Developer based in India</Text>
           </Box>
 
           <Box
