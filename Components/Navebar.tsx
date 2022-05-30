@@ -64,7 +64,12 @@ const NaveBar: NextPage = () => {
             outline: "none",
           }}
         >
-          <Image src={colorMode == "dark" ? darkIcon : lightIcon} alt={""} />
+          <Image
+            src={colorMode == "dark" ? darkIcon : lightIcon}
+            alt={""}
+            width={"24px"}
+            height={"24px"}
+          />
         </Button>
       </HStack>
     </Box>

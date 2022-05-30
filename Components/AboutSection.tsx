@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import { Container, Text, Box, useColorMode, Button } from "@chakra-ui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Image from 'next/image'
+import Image from "next/image";
 
 const AboutSection: NextPage = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -136,6 +136,8 @@ const AboutSection: NextPage = () => {
               colorMode == "dark" ? "000000" : "ffffff"
             }/github.png`}
             alt={""}
+            width={"24px"}
+            height={"24px"}
           />
           <Text>
             <Link href={"https://github.com/Rasla-Dev"} target={"_blank"}>
@@ -156,6 +158,8 @@ const AboutSection: NextPage = () => {
               colorMode == "dark" ? "000000" : "ffffff"
             }/linkedin-circled--v1.png`}
             alt={""}
+            width={"24px"}
+            height={"24px"}
           />
           <Text>
             <Link
@@ -179,6 +183,8 @@ const AboutSection: NextPage = () => {
               colorMode == "dark" ? "000000" : "ffffff"
             }/instagram-new--v1.png`}
             alt={""}
+            width={"24px"}
+            height={"24px"}
           />
           <Text>
             <Link
